@@ -1,8 +1,29 @@
-<p>customer works!</p><p>customer works!</p>
-<p>customer works!</p>
-<p>customer works!</p>
-<p>customer works!</p>
-<p>customer works!</p>
-<p>customer works!</p>
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Balance</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of bankData">
+        <td>{{ item.id }}</td>
+        <td>{{ item.name }}</td>
+        <td>{{ item.email }}</td>
+        <td>{{ item.balance }}</td>
+      </tr>
+    </tbody>
+  </table>
 
-
+  <div class="col-md-6 mx-auto">
+    <div class="card text-center">
+      <div class="card-body">
+        <h5 class="card-title">Transfer Money</h5>
+        <p class="card-text">Transfer funds between customer accounts.</p>
+        <a routerLink="/money" class="btn btn-primary card-link">Transfer Money</a>
+      </div>
+    </div>
+  </div>
+  
