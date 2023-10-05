@@ -1,0 +1,26 @@
+.bg-bank-1 {
+    background-image: url('images/bank-image-1.jpg');
+    background-size: cover;
+    height: 300px;
+}
+
+/* Add more custom styles as needed */
+.card {
+    border: none;
+}
+.card-title {
+    font-size: 1.5rem;
+    text-align: center;
+}
+.card-text {
+    text-align: center;
+}
+.card-link {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+}
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}

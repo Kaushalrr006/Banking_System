@@ -7,13 +7,13 @@ import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   {
-    path: '/customer', component: CustomerComponent
+    path: 'customer', component: CustomerComponent
    },
    {
-     path:'/money', component: MoneyTransferComponent
+     path:'money', component: MoneyTransferComponent
    },
    {
-    path:'/', component: HomeComponent
+    path:'', component: HomeComponent
   }
 ];
 
