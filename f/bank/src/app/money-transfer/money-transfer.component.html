@@ -1,1 +1,45 @@
-<p>money-transfer works!</p>
+<div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="text-center">Transfer Money</h3>
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="form-group">
+                <label for="senderSelect">Sender:</label>
+                <ng-container *ngIf="bankData">
+                  <ng-select
+                    [items]="bankData"
+                    bindLabel="name"
+                    [(ngModel)]="selectedSender"
+                    name="senderSelect"
+                    id="senderSelect"
+                    class="form-control"
+                  ></ng-select>
+                </ng-container>
+              </div>
+              <div class="form-group">
+                <label for="receiverSelect">Receiver:</label>
+                <ng-container *ngIf="bankData">
+                  <ng-select
+                    [items]="bankData"
+                    bindLabel="name"
+                    [(ngModel)]="selectedReceiver"
+                    name="receiverSelect"
+                    id="receiverSelect"
+                    class="form-control"
+                  ></ng-select>
+                </ng-container>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary">Transfer</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

@@ -7,6 +7,7 @@ import { MoneyTransferComponent } from './money-transfer/money-transfer.componen
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms'; // Import FormsModule
+import { NgSelectModule } from '@ng-select/ng-select';
 
 
 
@@ -21,7 +22,8 @@ import { FormsModule } from '@angular/forms'; // Import FormsModule
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    NgSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
