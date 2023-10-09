@@ -2,6 +2,8 @@
 
 import { Component } from '@angular/core';
 import { EventService } from '../services/event.service';
+import { Router } from '@angular/router'; // Import the Router
+
 
 @Component({
   selector: 'app-money-transfer',
@@ -14,7 +16,8 @@ export class MoneyTransferComponent {
   selectedReceiver: any;
   transactionAmount: number = 0;
 
-  constructor(private eventService: EventService) {}
+  constructor(private eventService: EventService, private router: Router // Inject the Router
+  ) {}
 
   ngOnInit() {
     // Call the API service to fetch data when the component initializes
@@ -34,6 +37,8 @@ export class MoneyTransferComponent {
       response => {
         // Handle success, e.g., show a success message
         alert('Transaction completed successfully.');
+        this.router.navigate(['/customer']);
+        
       },
       error => {
         // Handle error, e.g., show an error message
@@ -41,4 +46,5 @@ export class MoneyTransferComponent {
       }
     );
   }
+
 }
