@@ -14,7 +14,9 @@ export class EventService {
     return this.http.get<any[]>('https://bank-backend-6f4p.onrender.com/get');
   }
   updateBank(id: string, bodyData: any): Observable<any> {
-    return this.http.patch(`https://bank-backend-6f4p.onrender.com//update/${id}`, bodyData);
+    return this.http.patch(`https://bank-backend-6f4p.onrender.com/update/${id}`, bodyData);
   }
+  transaction(id1: string, id2:string , bodyData: any): Observable<any> {
+    return this.http.patch(`https://bank-backend-6f4p.onrender.com/transfer/${id1}/${id2}`, bodyData);
 }
-
+}
