@@ -9,7 +9,7 @@ The project involves creating a web application that simulates a basic banking s
 
 ### Database
 
-I will start by creating a database with dummy data for up to 10 customers. I have the flexibility to choose the database system from options such as MySQL, MongoDB, Postgres, etc. The customers' table will contain basic fields like name, email, and current balance. Additionally, a transfers table will record all transactions that occur.
+I will start by creating a database with MongoDb. The customers' table will contain basic fields like name, email, and current balance. Additionally, a transfers table will record all transactions that occur.
 
 ### Website Flow
 
