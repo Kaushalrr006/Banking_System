@@ -54,8 +54,3 @@ Feel free to explore the code and provide any feedback or suggestions. Your inpu
 
 🌟 **Hosting and Version Control**: The website will be hosted on a free hosting provider, and the code will be managed using GitLab.
 
-## Feedback and Contributions
-
-I welcome any feedback, suggestions, or contributions to improve this project. Together, we can make this internship project a valuable learning experience.
-
-Thank you for being a part of this journey! 🚀
