@@ -1,4 +1,3 @@
-
 # GRIP Program Internship Project - Banking System Simple Dynamic Website
 
 🚀 Welcome to my Graduate Rotational Internship Program (GRIP) project! In this exciting journey, I will be building a simple dynamic website with the following specifications:
