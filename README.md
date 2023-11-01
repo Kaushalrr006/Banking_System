@@ -7,7 +7,6 @@
 The project involves creating a web application that simulates a basic banking system. It will allow users to perform transactions between customers. Here are the key components and requirements:
 
 ### Database
-
 I will start by creating a database with MongoDb. The customers' table will contain basic fields like name, email, and current balance. Additionally, a transfers table will record all transactions that occur.
 
 ### Website Flow
